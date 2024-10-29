@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>bai04</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+	<servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>iuh.fit.se.springmvc.demo.HomeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>iuh.fit.se.springmvc.demo.HelloWorldController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello/showForm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>student</servlet-name>
+        <servlet-class>iuh.fit.se.springmvc.demo.StudentController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>student</servlet-name>
+        <url-pattern>/student/showForm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>customer</servlet-name>
+        <servlet-class>iuh.fit.se.springmvc.demo.CustomerController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customer</servlet-name>
+        <url-pattern>/customer/showForm</url-pattern>
+    </servlet-mapping>
+</web-app>
